@@ -24,7 +24,7 @@ class IndexView(SuccessMessageMixin, TemplateView, FormView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["me"] = Profile.objects.all()
+        context["me"] = Profile.objects.first()
         context["skills"] = Skill.objects.all()
         return context
     

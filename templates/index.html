@@ -75,7 +75,7 @@
 	   			<h1>I'm Isa Arifoglu.</h1>
 
 	   			<p class="intro-position">
-	   				<span>{{ user.profile.title }}</span>
+	   				<span>{{ me.title }}</span>
 	   			</p>
 
 	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -107,9 +107,9 @@
 
    			<div class="intro-info">
 				
-   				<img src="{{user.profile.image.url}}" alt="Profile Picture">
+   				<img src="{{ me.image.url }}" alt="Profile Picture">
 			
-   				<p class="lead">{{ user.profile.introduce }}</p>
+   				<p class="lead">{{ me.introduce }}</p>
    			</div>   			
 
    		</div>   		
@@ -120,7 +120,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Profile</h3>
-   			<p>{{ user.profile.profile }}</p>
+   			<p>{{ me.profile }}</p>
 
    			<ul class="info-list">
    				<li>
@@ -133,12 +133,12 @@
    				</li>
    				<li>
    					<strong>Job:</strong>
-   					<span>{{ user.profile.title|title }}</span>
+   					<span>{{ me.title|title }}</span>
    				</li>
 				 
    				<li>
    					<strong>Email:</strong>
-   					<span>{{user.profile.email}}</span>
+   					<span>{{me.email}}</span>
    				</li>
 				  
    			</ul> <!-- /info-list -->
