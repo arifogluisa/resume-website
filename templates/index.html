@@ -148,7 +148,7 @@
    		<div class="col-six tab-full">
 
    			<h3>Skills</h3>
-   			<p>{{ user.profile.skilltext }}</p>
+   			<p>{{ me.skilltext }}</p>
 
 				<ul class="skill-bars">
 					{% for skill in skills %}
@@ -167,7 +167,7 @@
    		<div class="col-twelve">
    			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
 			   
-   			<a href="{{user.profile.cv.url}}" title="Download CV" class="button button-primary" download>Download CV</a>
+   			<a href="{{ me.cv.url}}" title="Download CV" class="button button-primary" download>Download CV</a>
 			  
    		</div>   		
    	</div>
