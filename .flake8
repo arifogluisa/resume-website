@@ -1,5 +1,4 @@
 [flake8]
 exclude =
     migrations,
-    settings.py,
-    apps.py
+    settings.py
