@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import Profile, Skill
 from django.urls import reverse_lazy
@@ -27,4 +26,3 @@ class IndexView(SuccessMessageMixin, TemplateView, FormView):
         context["me"] = Profile.objects.first()
         context["skills"] = Skill.objects.all()
         return context
-    

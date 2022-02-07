@@ -9,6 +9,7 @@ class Skill(models.Model):
     def __str__(self):
         return self.name
 
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
@@ -20,9 +21,9 @@ class Profile(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to='profile_pics')
 
-
     def __str__(self):
         return f'{self.user.username} Profile'
+
 
 class Contact(models.Model):
     name = models.CharField(max_length=50)
