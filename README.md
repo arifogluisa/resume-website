@@ -1,2 +1,2 @@
 # resume-website
-This project is live on www.arifogluisa.herokuapp.com
+This project is live on http://arifogluisa.herokuapp.com
